@@ -1,0 +1,12 @@
+# Model Configurations
+
+grok:
+  base_url: "https://api.x.ai/v1"
+  model: "grok-beta"
+  default_temperature: 0.7
+  default_max_tokens: 2000
+  timeout: 60
+
+embeddings:
+  model: "text-embedding-ada-002"
+  dimensions: 1536
