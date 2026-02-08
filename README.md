@@ -1,69 +1,45 @@
-# Gen AI Multi-Agent Project
+# GenAI Multi-Agent Project
 
-A production-ready multi-agent system using Grok Cloud API and LangChain.
+A production-grade multi-agent system using GrokCloud API and LangGraph.
 
-## 🚀 Quick Start
-
-### Setup
-\`\`\`bash
-# Linux/Mac
-chmod +x setup.sh
-./setup.sh
-
-# Windows
-setup.bat
-\`\`\`
-
-### Activate Environment
-\`\`\`bash
-conda activate genai-multi-agent
-\`\`\`
-
-### Configure
-1. Copy `.env.example` to `.env`
-2. Add your Grok API key and other credentials
-3. Update configuration in `config/`
-
-### Run
-\`\`\`bash
-# Launch Jupyter
-jupyter notebook
-
-# Or run scripts
-python scripts/run_agents.py --task "your task here"
-\`\`\`
-
-## 📁 Project Structure
+## Project Structure
 ```
-├── src/                # Source code
-│   ├── agents/        # Agent implementations
-│   ├── tools/         # Agent tools
-│   ├── utils/         # Utilities
-│   └── prompts/       # Prompt templates
-├── notebooks/         # Jupyter notebooks
-├── tests/            # Unit tests
-├── config/           # Configuration files
-├── data/             # Data storage
-└── docs/             # Documentation
+genai-multi-agent-project/
+├── data/
+│   ├── raw/              # Raw input data
+│   ├── processed/        # Processed data
+│   └── outputs/          # Agent outputs
+├── notebooks/            # Jupyter notebooks for experiments
+├── src/
+│   ├── agents/          # Agent implementations
+│   ├── utils/           # Utility functions
+│   └── config/          # Configuration files
+├── logs/                # Application logs
+├── models/              # Saved models/prompts
+├── environment.yml      # Conda environment
+├── requirements.txt     # Pip requirements
+└── .env                 # Environment variables (create from .env.example)
 ```
 
-## 🧪 Testing
+## Setup
 
-\`\`\`bash
-pytest tests/
-\`\`\`
+1. Create conda environment:
+```bash
+   conda env create -f environment.yml
+   conda activate genai-multi-agent
+```
 
-## 📚 Documentation
+2. Configure environment variables:
+```bash
+   cp .env.example .env
+   # Edit .env with your GrokCloud API key
+```
 
-See `docs/` folder for detailed documentation.
+3. Start Jupyter:
+```bash
+   jupyter notebook
+```
 
-## 🤝 Contributing
+## Usage
 
-1. Create feature branch
-2. Make changes
-3. Run tests
-4. Submit PR
-
-## 📝 License
-
-[Your License]
+See notebooks/ for examples.

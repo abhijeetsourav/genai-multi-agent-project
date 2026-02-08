@@ -1,0 +1,17 @@
+name: genai-multi-agent
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - jupyter
+  - notebook
+  - ipykernel
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - python-dotenv
+  - pyyaml
+  - requests
+  - aiohttp
